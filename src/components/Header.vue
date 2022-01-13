@@ -24,11 +24,6 @@
 <script>
 export default {
     name: 'Header',
-  data() { 
-    return {
-      title: "Lorem Ipsum pippo",
-    }
-  },
 }
 </script>
 
