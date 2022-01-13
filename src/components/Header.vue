@@ -1,0 +1,20 @@
+<template>
+
+  <h1> {{ title }}</h1>
+
+</template>
+
+<script>
+export default {
+    name: 'Header',
+  data() { 
+    return {
+      title: "Lorem Ipsum pippo",
+    }
+  },
+}
+</script>
+
+<style lang="scss">
+
+</style>
