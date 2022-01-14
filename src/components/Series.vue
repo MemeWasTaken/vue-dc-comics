@@ -34,6 +34,7 @@ export default {
             color: #FFFFFF;
             font-size: 0.9em;
             margin-top: 1.5em;
+            text-align: start;
         }
     }
 </style>

@@ -1,8 +1,13 @@
 <template>
     <main>
         
+        <div class="jumbo">
+
+        </div>
+
         <div class="container-series">
             <div class="container">
+                <h2> Current Series </h2>
                 <Series 
                     v-for="(serie, index) in series"
                     :key="index"
@@ -10,6 +15,7 @@
                     :title="serie.series"
                 />
             </div>
+               <div> <a href="#">Load More</a> </div>
         </div>
         <div class="merchandise">
             <div class="container">
@@ -133,6 +139,10 @@ export default {
 <style lang="scss" scoped>
     main {
 
+        .jumbo {
+            background-image: url('../assets/img/jumbotron.jpg');
+            height: 400px;
+        }
         .container-series {
             background-color: #1C1C1C;
             width: 100%;
@@ -140,7 +150,31 @@ export default {
 
             .container {
                 display: flex;
+                position: relative;
                 flex-wrap: wrap;
+                padding-top: 2em;
+
+                h2 {
+                    background-color: #0282F9;
+                    color: #FFFFFF;
+                    position: absolute;
+                    left: 0;
+                    top: -22px;
+                    padding: 0.3em 1em;
+                }
+            }
+            div {
+                text-align: center;
+                padding-top: 0.6em;
+                padding-bottom: 1em;
+
+                a {
+                    text-decoration: none;
+                    background-color: #0282F9;
+                    color: #FFFFFF;
+                    text-align: center;
+                    padding: 0.4em 2em;
+                }       
             }
         }
         .merchandise {
@@ -173,7 +207,6 @@ export default {
                         .merch-text {
                             color: #FFFFFF;
                             margin-left: 0.8em;
-                            // font-weight: bold;
                             font-size: 0.9em;
                             text-transform: uppercase;
 
